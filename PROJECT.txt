@@ -1,0 +1,16 @@
+CITY OF THE LORD CHUCH
+-------------------------
+PROJECT
+-------------------------
+WEBSITE OUTCOME
+_______________
+1. It should have all church documents(library like).
+2. It should give access to departments.
+3. Have a dashboard for notifications.
+4. It shauld have calenders.
+5. Members should sign in.
+6. It should have a pop-up notificatins(for birthdays).
+7. It should have a payment point for tithe, offering, budget groups, pledge and etc.
+8. It should have a gallery.
+9. Where we are found(location).
+10. A slot for highlight videos.

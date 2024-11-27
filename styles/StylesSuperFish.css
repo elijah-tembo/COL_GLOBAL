@@ -1,0 +1,208 @@
+/*	General	*/
+
+nav	{
+    margin:	2em	0;
+}
+.sf-menu	{
+    background:	white;
+    border-radius:	7px;
+}
+.sf-menu:after	{
+    clear:	both;
+    content:	'';
+    display:	table;
+}
+
+/*We’re	going to float our list	items inside our navigation	bar.
+
+We	have	to	make	sure
+we	clear	the	floats	so	that	the	background	color	we’ve	set	is	visible.	This	method	of
+using	the	:after	pseudoclass	and	setting	the	clear,	content,	and	display	attributes
+is	clean	and	simple,	which	doesn’t	require	any	extra	markup	and	works	well	across
+many	browsers.
+
+Next, let’s	style the top level	of our menu. Add the following code	to your
+styles.css file:
+*/
+
+/*	Level	1	*/
+.sf-menu	li	{
+    position:	relative;
+    white-space:	nowrap;
+}
+.sf-menu	li:hover	{
+    background:	#a0d468;
+}
+.sf-menu	a	{
+    color:	#444;
+    display:	block;
+    padding:	1.5em	1em;
+    position:	relative;
+    text-decoration:	none;
+}
+.sf-menu	a:hover	{
+    background:	#a0d468;
+    color:	white;
+}
+.sf-menu	>	li:first-child,
+.sf-menu	>	li:first-child	a	{
+    border-top-left-radius:	7px;
+}
+.sf-menu	>	li	{
+    float:	left;
+}
+
+/*We’re	adding	a	green	background	to	the	menu	items	on	hover	and	changing	the	font
+color	from	a	dark	grey	to	white.	We’re	also	adding	the	corner	radius	to	the	first	item
+to	make	sure	the	menu	bar	still	has	a	top-left	rounded	corner	when	the	first	item	is
+hovered	over.*/
+
+/*Next,	let’s	take	a	look	at	how	we’ll	style	the	second	level	of	our	menus.	Add	the
+following	CSS	code	to	your	styles.css	file	to	style	the	second	level:*/
+
+/*	Level	2	*/
+
+
+.sf-menu ul{
+    background:	#a0d468;
+    border-bottom-right-radius:	7px;
+    border-bottom-left-radius:	7px;
+    display:	none;
+    left:	0;
+    min-width:	12em;
+    position:	absolute;
+    top:	100%;
+    z-index:	99;
+}
+/* .sf-menu ul li:hover{ } */
+
+.sf-menu ul a:hover{
+    background:	#8cc152;
+}
+.sf-menu li:hover >	ul{
+    display: block;
+}
+.sf-menu ul	> li:last-child, .sf-menu ul > li:last-child a{
+    border-bottom-left-radius:	7px;
+    border-bottom-right-radius:	7px;
+}
+
+/*The	items	in	this	menu	level	have	a	green	background	and	turns	to	a	darker	green	on
+hover.	We	have	also	added	rounded	corners	to	the	bottom,	which	requires	us	then	to
+add	rounded	corners	to	the	last	item	in	each	nested	<ul>	element.*/
+
+/*Finally,	we	still	have	a	third	level	of	menu	to	style.	Add	these	styles	to	your
+styles.css	file:*/
+
+/*	Level	3	*/
+.sf-menu	ul	ul	{
+    background:	#8cc152;
+    border-top-right-radius:	7px;
+    top:	0;
+    left:	100%;
+}
+.sf-menu	ul	ul	li:hover	{
+    background:	#7bb140;
+}
+.sf-menu	ul	ul	a:hover	{
+    background:	#7bb140;
+}
+.sf-menu	ul	ul	>	li:first-child,
+.sf-menu	ul	ul	>	li:first-child	a	{
+    border-top-right-radius:	7px;
+}
+.sf-menu	ul	ul	>	li:last-child,
+.sf-menu	ul	ul	>	li:last-child	a	{
+    border-bottom-right-radius:	7px;
+}
+
+/*This	third	level	has	a	background	color	that’s	just	a	shade	darker	than	the	level
+before,	and	when	hovered,	turns	another	shade	darker.	The	progression	to	darker
+shades	of	green	helps	to	communicate	the	relationships	between	the	items	in	our
+menu.*/
+
+/*We’ll	use	the	same	CSS	triangle	technique	that	we’ve	seen
+a	couple	of	times	already.	Add	the	following	CSS	code	to	your	styles.css	file:*/
+
+/*	Extras	*/
+.sf-arrows	.sf-with-ul	{
+    padding-right:	2.5em;
+}
+.sf-arrows	.sf-with-ul:after	{
+    border:	5px	solid	transparent;
+    border-top-color:	#444;
+    content:	'';
+    height:	0;
+    margin-top:	-3px;
+    position:	absolute;
+    right:	1em;
+    top:	50%;
+    width:	0;
+}
+.sf-arrows	>	li	>	.sf-with-ul:focus:after,
+.sf-arrows	>	li:hover	>	.sf-with-ul:after	{
+    border-top-color:	white;
+}
+.sf-arrows	ul	.sf-with-ul:after	{
+    margin-top:	-5px;
+    margin-right:	-3px;
+    border-color:	transparent;
+    border-left-color:	#e7f2dc;
+}
+.sf-arrows	ul	li	>	.sf-with-ul:focus:after,
+.sf-arrows	ul	li:hover	>	.sf-with-ul:after	{
+    border-left-color:	white;
+}
+
+/*And	take	a	deep	breath,	because	we’ve	finally	reached	the	end	of	the	CSS	code	to
+create	a	custom	style	for	the	menu.	The	bonus	of	this	CSS	code	is	that	it	will	work
+even	without	JavaScript	enabled.	The	Superfish	plugin	just	enhances	the	menu	and
+makes	it	more	usable.
+
+What	just	happened?
+We	wrote	custom	CSS	to	style	our	menu	to	match	a	design	that	we	created.	We	had	to	dig
+into	the	cascading	feature	of	CSS	and	decide	which	styles	should	cascade	down	through
+all	levels	of	the	menu	and	which	should	not.	Just	be	patient	and	keep	the	cascade	in	mind
+as	you	work	down	through	the	levels	of	the	menu.
+
+
+Earlier,	I	pointed	out	that	one	problem	with	our	menu	was	how	quickly	the	menu	reacted
+to	the	mouseover	event.	Any	time	the	mouse	is	moved	over	the	menu,	the	nested	menus
+open.	While	that	might	seem	like	a	good	thing	at	first,	it	might	be	disconcerting	or
+surprising	to	site	visitors	if	they	are	simply	moving	their	mouse	on	the	screen	and	aren’t
+intending	to	use	the	drop-down	or	fly-out	menus.
+The	Superfish	plugin	has	built-in	support	for	the	hoverIntent	plugin.	The	hoverIntent
+plugin	sort	of	pauses	the	mouseover	event	and	makes	the	page	wait	to	see	if	the	mouse
+slows	down	or	stops	on	an	item	to	make	sure	it’s	what	the	site	visitor	intended	to	do.	That
+way	if	the	site	visitor	just	happens	to	roll	their	mouse	over	the	drop-down	menu	on	their
+way	to	something	else	on	the	page,	the	submenus	won’t	start	appearing,	throwing	them
+into	confusion.
+
+
+1.	 In	the	Superfish	download,	locate	the	hoverIntent.js	file	inside	the	js	folder	and
+copy	the	file	to	your	own	scripts	folder.
+2.	 Next,	we	need	to	attach	the	hoverIntent	plugin	to	our	HTML	page.*/
+
+
+
+/*/*Next,	a	sliding	animation	would	be	better	suited	to	our	menu	style.	The	default	animation
+is	to	fade	the	submenus	in.	We	can	override	this	default	behavior	and	replace	it	with	a
+sliding	animation.
+
+Fading	the	menu	in	means	that	the	menu	opacity	is	animating	from	0	percent	to	100
+percent.	We’d	rather	animate	the	height	of	the	submenu,	so	that	the	submenu	slides
+into	view.	To	do	that,	open	up	your	scripts.js	file	and	customize	the	animation
+value	inside	the	superfish()	method	as	follows:
+
+$(document).ready(function(){
+    $('#sfNav').superfish({
+            animation: {height:'show'}
+    });
+});*/
+
+
+/*Just	adding	a	value	here	will	override	the	default	behavior	of	the	plugin	and	replace	it
+with	the	animation	we	choose	instead.
+Now	when	you	refresh	the	page	in	a	browser,	you’ll	see	the	submenus	slide	into	view
+instead	of	fade	in,	which	is	a	much	more	fitting	animation	for	the	CSS	We’ve	used	to
+style	the	menus.*/

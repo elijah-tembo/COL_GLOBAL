@@ -1,0 +1,350 @@
+
+
+
+
+
+/* Anchor tags styling  */
+.nav-list li a{
+    text-decoration: none;
+    border-bottom: 1px solid #dFeEFF; /* fallback colour must use full shorthand */
+    text-decoration: none;
+    zoom: 1; /*IE7*/
+}
+.sub-menu li a{
+  text-decoration: none;
+  border-bottom: 0px;
+  text-decoration: none;
+  zoom: 1; /*IE7*/
+}
+.nav-list li a:hover{
+  color: rgb(179, 155, 24);
+}
+
+
+/*Sub-menu styles*/
+.sub-menu{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: none; /*initially hidden*/
+    position: absolute; /*position relative to the parent list*/
+    top: 100%;/*place below the parent list*/
+    left: 0px;
+    /* background-color: #eeeeeeef; */
+    /* box-shadow: 0 4px 6px rgba(0,0,0,1); Add shadow for better look */
+    border-radius: 5px;
+    z-index: 10; /*ensures it appears above other elements*/
+}
+.sub-menu li{
+    list-style: none;
+    padding: 3%;
+    border-bottom: 0px solid #ccc; /*add divider line*/
+    background: #BDD2FF;
+}
+.sub-menu li:last-child{
+    border-bottom: none; /*removes border from the last item*/
+}
+.sub-menu .sub-sub-menu ul{
+  display: none;
+  top: -35px;
+  left: 103%;
+  border-radius: 5px;
+  float:left;
+}
+.sub-menu .sub-sub-menu li{
+    display: none;
+    top: -35px;
+    left: 103%;
+    border-radius: 5px;
+    float:left;
+}
+
+/*Show sub-menu on hover*/
+.nav-list > li:hover .sub-menu{
+    display:inline-block; /*Show sub-menu*/
+}
+/* Show sub-sub-menu  */
+.sub-menu > li:hover .sub-sub-menu li{
+    display:block; /*Show sub-menu*/
+}
+
+
+/* Add an arrow for menu items with submenus */
+.nav-list > li {
+    position: relative;
+  }
+  
+  /* Add arrows for first-level submenus */
+  .nav-list  > li > .sub-sub-menu::before {
+    content: "▼"; /* Downward arrow */
+    font-size: 20px;
+    position: absolute;
+    color: gold;
+    /* top: 50%; */
+    right: 10px; /*Adjust for spacing*/
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  span{
+    font-size: small;
+    margin: 0px;
+    color: gold;
+  }
+  .downward-arrow{
+    display: inline;
+    padding: 5px;
+  }
+  .rightfac-arrow{
+    display: inline;
+    padding-inline-start: 40px;
+  }
+
+
+  /* Add right-facing arrows for nested submenus */
+  /*
+  .sub-menu li > .sub-sub-menu::before {
+    content: "▶"; Rightward arrow
+    font-size: 20px;
+    position: absolute;
+    color: gold;
+    top: 20%;
+    left: 100%;
+    transform: translateY(-50%);
+  }
+
+  Styling arrows
+  .nav-list li {
+    position: relative;
+    padding-right: 20px; Adjust for arrow space
+  }
+  
+  .nav-list > li > .sub-menu::after{
+    content: "▼";
+    font-size: 12px;
+    color: gold;
+    position: absolute;
+    right: 10px;
+  }
+  
+  .sub-menu li > .sub-sub-menu::after {
+    content: "▶";
+    position: absolute;
+    right: 10px;
+  } */
+
+
+/* FORM STYLES  */
+.form-container{
+  margin: 50px auto; 
+  color: white;
+  padding-bottom: 20%;
+  border: 0px;
+} 
+@media (min-width: 576px) {
+  .form-container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-container {
+    max-width: 720px;
+  }
+}
+
+.form-style{
+    background-color: rgba(16, 34, 8, 0.644);
+    /* margin-bottom: 5%; */
+    margin-top: 30%;
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+    float: right;
+    text-align: center;
+    border-style:dashed;
+    border-radius: 5%;
+    transform: scale(0.99);
+}
+
+.last-touch{
+    background-color: rgba(43, 82, 73, 0.89);
+    margin-top: 19%;
+    margin-bottom: 15%;
+    margin-left: 40%;
+    margin-right: 35%;
+    padding-top: 0%;
+    padding-left: 0%;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 480px) {
+    .site-header .social-icon {
+        display: none !important;
+    }
+    .offcanvas-icon {
+        margin-left: 10px;
+    }
+    .countdown-item {
+        margin: 10px;
+    }
+    .sfNav{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+
+
+  /* MAIN BODY STYLES */
+  .main-body ul .content-list{
+    background-color: white;
+    margin-bottom: 2%;
+    padding: 0px;
+    width: 95%;
+    height: 50vw;
+    list-style: none;
+  }
+  .main-body ul li .image-div{
+    background-image: url(../images/ThemeYear/2023.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+  }
+
+
+/* image sliding style in the first list of the main body  */
+.slider-list{
+  /* background-color: red; */
+  margin: 20px;
+  /* padding: 15px; */
+  border: 4px solid #3d3a3a;
+  width: 90%;
+  height: 35vw;
+  list-style: none;
+}
+.slider{
+  position: relative;
+  width: 100%; /*full width of the list*/
+  height: 100%;
+  overflow: hidden; /*ensures images don't overflow the container*/
+}
+.slides{
+  display: flex;
+  width: calc(100%); /*3 original slides plus 2 clones*/
+  animation: slide-animation 40s infinite; /*infinite ensures the slide don't stop*/
+  transition: transform 2s ease-out; /*Smooth slide transition*/
+}
+.slide{
+  width: 100%; /*each image takes full width of the slider*/
+  height: 100vw;
+  flex-shrink: 0; /*prevent shrinking*/
+  background-size: cover;
+  background-position: center;
+}
+.slide1{
+  background-image: url(../images/slides/2022.jpg);
+  height: 50vw;
+}
+.slide2{
+  background-image: url(../images/slides/hospitality.jpg);
+  height: 50vw;
+}
+.slide3{
+  background-image: url(../images/slides/media.jpg);
+  height: 50vw;
+}
+
+
+
+
+
+
+
+
+
+/* ANIMATION STYLES */
+/* 3D Rotation Keyframes */
+@keyframes rotate3d {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg); /* Initial position */
+  }
+  25% {
+    transform: rotate3d(0, 1, 0, 90deg); /* Quarter turn */
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, 180deg); /* Half turn */
+  }
+  75% {
+    transform: rotate3d(0, 1, 0, 270deg); /* Three-quarter turn */
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg); /* Full turn */
+  }
+}
+
+/* Rotating logo styling */
+.rotating-logo {
+  text-align: center;
+  margin: 20px auto;
+  perspective: 1500px; /* Add depth for 3D effect */
+}
+.logo {
+  width: 100px; /* Adjust as needed */
+  height: auto;
+  animation: rotate3d 4s linear infinite; /* 3D rotation animation */
+  height: 5vw;
+  width: 5vw;
+}
+
+ /* Header, text scroll animation */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 100%; /* Or your desired width */
+  position: relative;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.highlight-text p{
+  background-color: #1f124d56;
+  color: white;
+  line-height: 1.3rem;
+  margin-bottom: -2rem;
+}
+.highlight-text {
+  display: inline-block;
+  animation: scroll-text 30s linear infinite;
+}
+
+/* keyframes for scrolling texts */
+@keyframes scroll-text {
+  0% {
+    transform: translateX(100%);
+  }
+  95% {
+    transform: translateX(-100%);
+  }
+  100%{
+      transform: translateX(-100%);
+  }
+}
+
+/* Keyframes for sliding animations */
+@keyframes slide-animation{
+  0%, 10%{
+    transform: translateX(0%);
+  }                                /*first slide visible*/
+  16.33%, 50%{
+    transform: translateX(-100%);
+  }                                /*second slide visible*/
+  60.67%, 83.33%{
+    transform: translateX(-200%);
+  }                                /*third slide visible*/
+  100%{
+    transform: translateX(0%);
+  }                                /*loop back to first slide*/
+}

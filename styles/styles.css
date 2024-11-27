@@ -1,0 +1,232 @@
+/* BODY STYLES  */
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  background-color: rgb(45, 45, 143);
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(
+      100deg,
+      rgba(51, 51, 154, 0.8),
+      rgba(81, 81, 147, 0.7)
+    ), url(../images/DOMINION\ CONFERENCES/2024/2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+body {
+background-image: url("../images/bgs/5.jpg");
+}
+
+/* Header Style Section 1*/
+.h1-church-name{
+  background-color: rgba(7, 7, 46, 0.407);
+  text-align: center;
+  border-radius: 15%;
+  border-style: double;
+  border-color: burlywood;
+  color: burlywood;
+  margin: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 2rem;
+}
+.logo{
+  height: 5vw;
+  width: 5vw;
+}
+.div-mission h3{
+  text-align: center;
+  color: burlywood;
+  padding-top: 0px;
+  margin-bottom: -2rem;
+}
+
+hr{
+  width: 95%;
+}
+
+/* NAV STYLE */
+.navigation{
+  display: flex; /* use flexbox */
+  justify-content: center; /*Center horizontally*/
+  align-items: center;
+  padding: 2px; /*Adding padding for spacing*/
+  font-size: medium;
+}
+.nav-list{
+  display: inline-flex; /*Makes the list horizontal*/
+  gap: 5px; /*Space betwwen items*/
+  list-style: none; /*removes bullet points*/
+  padding: 0px;
+  margin: 0px;
+  transition: 1s;
+}
+.nav-list li{
+  position: relative; /*Needed for positioning the sub-menu*/
+  justify-content: center;
+  text-align: left;
+  padding: 5px 5px 5px 10px;
+  background-color: rgb(114, 214, 237);
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+
+
+
+
+.sec-1{
+    width: 70%;
+    color:burlywood;
+    padding-top: 1.5rem;
+    margin-top: 1.0rem;
+    margin: auto;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+label,
+span{
+    display:block;
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+fieldset {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+    border: 0;
+    margin-bottom: 1.5rem;
+    transition: 1s;
+    
+  }
+
+.fourth-field,
+.rate {
+    display:grid;
+    margin-bottom: 0.1rem;
+    margin-top: 3.5rem;
+}
+.third-field {
+    margin-top: 3.5rem;
+}
+.second-field{
+    margin-top: -.5rem;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    display: inline-block;
+}
+
+textarea {
+    resize: vertical;
+    width: 100%;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: auto;
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+  
+input,
+button,
+select,
+textarea {
+    font-size: inherit;
+  }
+
+/* Form Style  */
+form {
+    background-color: rgb(30, 30, 52);
+    padding: 2.5rem 0.625rem;
+    border-radius: 1.0rem;
+    opacity: 75%;
+    box-shadow: 0 0 10px rgb(8, 4, 58);
+  }
+  
+  @media (min-width: 480px) {
+    form {
+      padding: 2.58rem;
+    }
+  }
+  
+  input[class="display-form"],
+  select,
+  textarea {
+    width: 97%;
+    border: 5px solid #f8f8f8;
+    border-radius: 0.25rem;
+    margin-top: 0.5rem;
+  }
+  .Gender{
+    margin-bottom: -0.1rem;
+    margin-top: -1.5rem;
+  }
+  .rate{
+    margin-bottom: -0.1rem;
+    margin-top: -0.5rem;
+  }
+  #dropdown{
+    margin-bottom: -0.1rem;
+  }
+input[type="radio"],
+input[type="checkbox"]{
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.0rem;
+  min-width: 1.25rem;
+}
+
+/* FOOTER SECTION STYLE  */
+.footer-sect{
+  background-color: rgb(48, 47, 47);
+  margin-bottom: 2%;
+  padding: 0px;
+  width: 100%;
+  height: 30vw;
+  list-style: none;
+  color: white;
+}
+.footer-sect .content-footer{
+  background-color: rgb(16, 56, 22);
+  margin-bottom: 2%;
+  padding: 0px;
+  width: 90%;
+  height: 25vw;
+  list-style: none;
+}
+.footer-sect .div-footer{
+  width: 100%;
+  /* margin: 40px; */
+  padding: 0px;
+}
+.hr-footer{
+  color: #ef0a0a;
+  border: 1px solid red;
+  /* height: 1vw; */
+}
+.footer-links li{
+  font-family: fantasy;
+  color: grey;
+  list-style:disc;
+}
+.footer-links p{
+  font-family:sans-serif;
+  color: rgb(218, 218, 218);
+  padding: 5px 0px 0px 5px;
+  margin: 0px
+}
+.footer-links li a{
+  text-decoration: none;
+}
