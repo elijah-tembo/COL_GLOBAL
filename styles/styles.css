@@ -262,3 +262,27 @@ input[type="checkbox"]{
   /* background-attachment: fixed; */
   }
 }
+
+@media (max-width: 768px) {
+  /* Styles for tablets and smaller screens */
+  nav ul {
+      flex-direction:row;
+  }
+  nav li {
+      margin-right: 0PX;
+      /* margin-bottom: 2px; */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Styles for mobile phones */
+  header {
+      padding: 0.5em;
+  }
+  main {
+      padding: 1em;
+  }
+  section {
+      margin-bottom: 10px;
+  }
+}
