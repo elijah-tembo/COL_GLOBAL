@@ -35,20 +35,14 @@
 /*---------------------------------------
   SITE HEADER 2        
 -----------------------------------------*/
-/* .sec-header2,
-.site-header,
-.div-header2{
-    display: none;
-} */
-
 .site-header {
     position:fixed;
     z-index: 10;
-    bottom: 88%;
+    bottom: 93%;
     right: 0;
     left: 0;
     padding-bottom: 20px;
-    margin-bottom: 15px;
+    /* margin-bottom: 55px; */
 }
 
 .image-log {
