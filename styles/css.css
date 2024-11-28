@@ -1,0 +1,186 @@
+/*---------------------------------------
+  CUSTOM PROPERTIES ( VARIABLES )             
+-----------------------------------------*/
+
+:root {
+    --body-bg-color: #181717;
+    --white-color: #ffffff;
+    --primary-color: #E07A5F;
+    --secondary-color: #F2CC8F;
+    --section-bg-color: #f0f8ff;
+    --custom-btn-bg-color: #E07A5F;
+    --custom-btn-bg-hover-color: #F2CC8F;
+    --dark-color: #000000;
+    --p-color: #717275;
+    --link-hover-color: #F2CC8F;
+    --body-font-family: 'Poppins', sans-serif;
+    --heading-font-family: 'Unbounded', sans-serif;
+    --h1-font-size: 62px;
+    --h2-font-size: 36px;
+    --h3-font-size: 28px;
+    --h4-font-size: 24px;
+    --h5-font-size: 22px;
+    --h6-font-size: 20px;
+    --p-font-size: 18px;
+    --menu-font-size: 16px;
+    --btn-font-size: 14px;
+    --border-radius-large: 100px;
+    --border-radius-medium: 20px;
+    --border-radius-small: 10px;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+}
+
+/*---------------------------------------
+  SITE HEADER 2        
+-----------------------------------------*/
+/* .sec-header2,
+.site-header,
+.div-header2{
+    display: none;
+} */
+
+.site-header {
+    position:fixed;
+    z-index: 10;
+    bottom: 88%;
+    right: 0;
+    left: 0;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.image-log {
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    margin: 0px;
+}
+.church-name{
+    font-size: larger;
+    color: #F2CC8F;
+}
+
+.site-header .container {
+    background-color: rgba(9, 26, 79, 0.65);
+    border-radius: 0px 0px 20px 20px;
+    padding: 15px 25px 15px 15px;
+    max-height: 70px;
+}
+
+.site-header-text {
+    color: var(--white-color);
+    font-size: var(--p-font-size);
+    font-weight: var(--font-weight-bold);
+}
+
+.site-header-text span {
+    margin-left: 10px;
+}
+
+.site-header .social-icon {
+    max-height: 35px;
+}
+
+.offcanvas {
+    background-color: rgba(5, 7, 44, 0.85);
+    padding: 30px;
+}
+
+.offcanvas.offcanvas-end {
+    border-left: 0;
+}
+
+.offcanvas-header .btn-close {
+    filter: brightness(0) invert(1);
+    transition: all 0.3s;
+}
+
+.offcanvas-header .btn-close:hover {
+    transform: rotate(180deg);
+}
+
+.offcanvas-icon {
+    font-size: var(--h3-font-size);
+    color: var(--white-color);
+    margin-left: 15px;
+}
+
+.offcanvas nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.offcanvas nav ul li {
+    list-style: none;
+    display: block;
+}
+
+.offcanvas nav ul li a {
+    color: var(--white-color);
+    font-family: var(--heading-font-family);
+    font-size: var(--p-font-size);
+    font-weight: var(--font-weight-medium);
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.offcanvas nav ul li a:hover,
+.offcanvas nav ul li a.active {
+    color: var(--link-hover-color);
+}
+.header-2 a {
+    display: inline-block;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+
+/*---------------------------------------
+  SOCIAL ICON               
+-----------------------------------------*/
+
+.social-icon {
+    margin: 0;
+    padding: 0;
+}
+
+.social-icon-item {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.social-icon-link {
+    border-radius: var(--border-radius-large);
+    color: var(--white-color);
+    font-size: var(--btn-font-size);
+    display: block;
+    margin-right: 5px;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    line-height: 36px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.social-icon-link:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+
+/*---------------------------------------
+  RESPONSIVE STYLES               
+-----------------------------------------*/
+
+@media screen and (max-width: 480px) {
+    .site-header .social-icon {
+        display: none !important;
+    }
+    .offcanvas-icon {
+        margin-left: 10px;
+    }
+}

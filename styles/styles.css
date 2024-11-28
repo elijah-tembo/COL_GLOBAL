@@ -16,7 +16,8 @@ body {
 background-image: url("../images/bgs/5.jpg");
 }
 
-/* Header Style Section 1*/
+
+/* Header 1*/
 .h1-church-name{
   background-color: rgba(7, 7, 46, 0.407);
   text-align: center;
@@ -40,8 +41,12 @@ background-image: url("../images/bgs/5.jpg");
   margin-bottom: -2rem;
 }
 
-hr{
+.div-hr{
+  color: rgb(245, 5, 5);
   width: 95%;
+  padding-top: 45px;
+  
+
 }
 
 /* NAV STYLE */
@@ -50,6 +55,8 @@ hr{
   justify-content: center; /*Center horizontally*/
   align-items: center;
   padding: 2px; /*Adding padding for spacing*/
+  padding-bottom: 0px;
+  margin-top: -1rem;
   font-size: medium;
 }
 .nav-list{
