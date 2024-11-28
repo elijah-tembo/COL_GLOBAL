@@ -177,4 +177,14 @@
     .offcanvas-icon {
         margin-left: 10px;
     }
+
+    .site-header {
+        position:fixed;
+        z-index: 10;
+        /* bottom: 93%; */
+        right: 0;
+        left: 0;
+        /* padding-bottom: 20px; */
+        /* margin-bottom: 55px; */
+    }
 }
