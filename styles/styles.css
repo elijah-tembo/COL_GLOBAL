@@ -28,7 +28,7 @@ background-image: url("../images/bgs/5.jpg");
   margin: auto;
   padding-left: 5%;
   padding-right: 5%;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .logo{
   height: 5vw;
@@ -44,13 +44,18 @@ background-image: url("../images/bgs/5.jpg");
 .div-hr{
   color: rgb(245, 5, 5);
   width: 95%;
-  padding-top: 45px;
-  
-
+  padding-top: 60px;
+}
+.header1-hr{
+  color: rgb(255, 255, 255);
+  width: 95%;
+  padding-top: 5px;
+  margin-bottom: 20px;
 }
 
 /* NAV STYLE */
 .navigation{
+  width: 100%;
   display: flex; /* use flexbox */
   justify-content: center; /*Center horizontally*/
   align-items: center;
