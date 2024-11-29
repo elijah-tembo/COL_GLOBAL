@@ -66,7 +66,7 @@ background-image: url("../images/bgs/5.jpg");
 }
 .nav-list{
   display: inline-flex; /*Makes the list horizontal*/
-  gap: 5px; /*Space betwwen items*/
+  gap: 10px; /*Space betwwen items*/
   list-style: none; /*removes bullet points*/
   padding: 0px;
   margin: 0px;
@@ -76,13 +76,12 @@ background-image: url("../images/bgs/5.jpg");
   position: relative; /*Needed for positioning the sub-menu*/
   justify-content: center;
   text-align: left;
-  padding: 5px 5px 5px 10px;
+  padding: 5px 5px 5px 5px;
+  margin-right: 0px;
   background-color: rgb(114, 214, 237);
   border-radius: 0px;
   cursor: pointer;
 }
-
-
 
 
 
@@ -241,7 +240,7 @@ input[type="checkbox"]{
 /* RESPONSIVENESS  */
 @media (min-width: 360px) {
   form {
-    padding: 2.58rem;
+    /* padding: 2.58rem; */
   }
   body {
     font-family: Tahoma, Arial, sans-serif;
@@ -257,7 +256,7 @@ input[type="checkbox"]{
     /* background-attachment: fixed; */
   }
   body {
-  background-image: url("../images/bgs/5.jpg");
+  /* background-image: url("../images/bgs/5.jpg"); */
   /* background-size: cover; */
   /* background-attachment: fixed; */
   }
@@ -266,10 +265,10 @@ input[type="checkbox"]{
 @media (max-width: 768px) {
   /* Styles for tablets and smaller screens */
   nav ul {
-      flex-direction:row;
+      /* flex-direction:row; */
   }
   nav li {
-      margin-right: 0PX;
+      /* margin-right: 0PX; */
       /* margin-bottom: 2px; */
   }
 }
@@ -277,12 +276,12 @@ input[type="checkbox"]{
 @media (max-width: 480px) {
   /* Styles for mobile phones */
   header {
-      padding: 0.5em;
+      /* padding: 0.5em; */
   }
   main {
-      padding: 1em;
+      /* padding: 1em; */
   }
   section {
-      margin-bottom: 10px;
+      /* margin-bottom: 10px; */
   }
 }
